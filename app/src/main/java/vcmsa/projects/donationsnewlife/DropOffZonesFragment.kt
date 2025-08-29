@@ -73,9 +73,6 @@ class DropOffZonesFragment : Fragment(), OnMapReadyCallback {
     private val db = FirebaseFirestore.getInstance()
     private val auth = FirebaseAuth.getInstance()
 
-    // TODO: Replace this with actual role check from auth
-    private val isAdmin: Boolean = true
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
