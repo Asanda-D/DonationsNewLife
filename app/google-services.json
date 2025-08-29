@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "334387737433",
+    "project_id": "donationsnewlife-11320",
+    "storage_bucket": "donationsnewlife-11320.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334387737433:android:b3811cf1e8992c5a0d1248",
+        "android_client_info": {
+          "package_name": "vcmsa.projects.donationsnewlife"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe7hCUSuP-SjShWJmfkMh1ovTag0mEo0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

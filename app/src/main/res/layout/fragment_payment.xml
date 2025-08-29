@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Bank Details -->
+        <TextView
+            android:id="@+id/tvBankDetails"
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:layout_marginBottom="24dp"
+            android:text="Bank Name: Standard Bank\nAccount Name: New Life NPO\nAccount Number: 1234567890\nBranch Code: 000111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <!-- Goal Section -->
+        <TextView
+            android:id="@+id/tvGoalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="GOAl FOR THIS YEAR:"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarGoal"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginBottom="4dp"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tvProgressHint"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:text="Progress will be visible 24hrs after donating"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+        <!-- Payment Instruction -->
+        <TextView
+            android:id="@+id/tvPaymentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Click Donate to pay via PayPal, Mastercard or Visa."
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <!-- Donate Button -->
+        <Button
+            android:id="@+id/btnDonate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#6CAFBB"
+            android:padding="12dp"
+            android:text="Donate"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Admin Edit Button -->
+        <Button
+            android:id="@+id/btnEditGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:text="Edit Goal and Progress"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
+

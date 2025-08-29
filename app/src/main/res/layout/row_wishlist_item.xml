@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:weightSum="2">
+
+    <!-- Product name column -->
+    <TextView
+        android:id="@+id/txtProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sample Product"
+        android:textSize="16sp"/>
+
+    <!-- Priority column -->
+    <TextView
+        android:id="@+id/txtPriority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:text="🔥"
+        android:textSize="16sp"/>
+
+</LinearLayout>

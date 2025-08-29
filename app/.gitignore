@@ -1,0 +1,32 @@
+# IDE files
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+
+# Build outputs
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Firebase config (keep secret!)
+app/google-services.json
+
+# Kotlin/Java temp files
+*.class
+*.jar
+*.apk
+*.ap_ 
+*.dex
+*.class
+
+# Others
+*.log
+*.orig

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="vcmsa.projects.donationsnewlife.LoginFragment"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="vcmsa.projects.donationsnewlife.RegisterFragment"
+        android:label="Register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="vcmsa.projects.donationsnewlife.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_donateFragment"
+            app:destination="@id/donateFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_volunteerFragment"
+            app:destination="@id/volunteerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/donateFragment"
+        android:name="vcmsa.projects.donationsnewlife.DonateFragment"
+        android:label="Donate"
+        tools:layout="@layout/fragment_donate" >
+        <action
+            android:id="@+id/action_donateFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_donateFragment_to_dropOffZonesFragment"
+            app:destination="@id/dropOffZonesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dropOffZonesFragment"
+        android:name="vcmsa.projects.donationsnewlife.DropOffZonesFragment"
+        android:label="Drop-Off-Zones"
+        tools:layout="@layout/fragment_drop_off_zones" >
+        <action
+            android:id="@+id/action_dropOffZonesFragment_to_manageWishlistFragment"
+            app:destination="@id/manageWishlistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="vcmsa.projects.donationsnewlife.PaymentFragment"
+        android:label="Donate"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="vcmsa.projects.donationsnewlife.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/volunteerFragment"
+        android:name="vcmsa.projects.donationsnewlife.VolunteerFragment"
+        android:label="Volunteer"
+        tools:layout="@layout/fragment_volunteer" />
+    <fragment
+        android:id="@+id/manageWishlistFragment"
+        android:name="vcmsa.projects.donationsnewlife.ManageWishlistFragment"
+        android:label="fragment_manage_wishlist"
+        tools:layout="@layout/fragment_manage_wishlist" />
+</navigation>

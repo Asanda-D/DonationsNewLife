@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".DonateFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Section 1: Donate Online -->
+        <TextView
+            android:id="@+id/tvDonateInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donating helps us provide essential items to those in need. Your contributions directly impact lives."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnDonatePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Donate" />
+
+        <!-- Section 2: Drop-off Items -->
+        <TextView
+            android:id="@+id/tvDropOffInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prefer to drop off items? Check our drop-off zones and bring donations directly to our centers."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnDropOffZones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drop-off Zones" />
+    </LinearLayout>
+</ScrollView>

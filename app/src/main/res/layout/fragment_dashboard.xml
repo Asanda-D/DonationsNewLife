@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".DashboardFragment">
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnVolunteer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volunteer"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnDonate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donate"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Admin-only Edit button -->
+    <Button
+        android:id="@+id/btnAdminEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit (Admin Only)"
+        android:visibility="gone"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

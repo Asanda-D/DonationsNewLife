@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageWishlistFragment"
+    android:padding="16dp">
+
+    <!-- Add new product -->
+    <EditText
+        android:id="@+id/inputProductName"
+        android:layout_width="378dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter product name" />
+
+    <Spinner
+        android:id="@+id/spinnerPriority"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/priorities" />
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Wishlist table with edit/delete -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerManageWishlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
